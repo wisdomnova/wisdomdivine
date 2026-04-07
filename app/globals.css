@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  /* ── Editorial Light Palette ── */
+  --bg-primary: #fafaf8;
+  --bg-elevated: #f2f1ed;
+  --bg-dark: #1a1a18;
+  --text-primary: #1a1a18;
+  --text-secondary: rgba(26, 26, 24, 0.55);
+  --text-dim: rgba(26, 26, 24, 0.3);
+  --text-on-dark: #fafaf8;
+  --border: rgba(26, 26, 24, 0.12);
+  --border-active: rgba(26, 26, 24, 0.25);
+  --accent: #1a1a18;
+
+  /* Easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme {
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --color-muted: var(--text-secondary);
+  --color-dim: var(--text-dim);
+  --color-border: var(--border);
+  --color-border-active: var(--border-active);
+  --color-elevated: var(--bg-elevated);
+  --color-dark: var(--bg-dark);
+  --color-on-dark: var(--text-on-dark);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+}
+
+/* ── Base ── */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(0.875rem, 0.85rem + 0.15vw, 1rem);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* ── Horizontal Rule ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ── Smooth Scroll ── */
+html {
+  scroll-behavior: smooth;
+}
