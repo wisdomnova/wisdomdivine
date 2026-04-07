@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export function LogoSeal() {
-  const text = 'SOFTWARE ENGINEER · SYSTEMS THINKER · BUILDER · PRODUCT · AUTOMATION · SAAS · OPTIMISTIC · ';
+  const text = 'Product Engineer · SYSTEMS THINKER · BUILDER · PRODUCT · AUTOMATION · SAAS · OPTIMISTIC · ';
 
   return (
     <section className="py-32 md:py-48 flex items-center justify-center overflow-hidden">

@@ -25,15 +25,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wisdom Divine / Software Engineer",
+    default: "Wisdom Divine / Product Engineer",
     template: "%s / Wisdom Divine",
   },
   description:
-    "Software engineer building systems that solve real operational problems. Product engineering, automation, SaaS, and scalable backend infrastructure based in Abuja, Nigeria.",
+    "Product Engineer building systems that solve real operational problems. Product engineering, automation, SaaS, and scalable backend infrastructure based in Abuja, Nigeria.",
   metadataBase: new URL("https://wisdomdivine.xyz"),
   keywords: [
     "Wisdom Divine",
-    "software engineer",
+    "Product Engineer",
     "full-stack developer",
     "product engineering",
     "backend systems",
@@ -78,23 +78,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://wisdomdivine.xyz",
     siteName: "Wisdom Divine",
-    title: "Wisdom Divine / Software Engineer",
+    title: "Wisdom Divine / Product Engineer",
     description:
-      "Software engineer building systems that solve real operational problems. Product engineering, automation, SaaS, and scalable backend infrastructure.",
+      "Product Engineer building systems that solve real operational problems. Product engineering, automation, SaaS, and scalable backend infrastructure.",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Wisdom Divine / Software Engineer",
+        alt: "Wisdom Divine / Product Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wisdom Divine / Software Engineer",
+    title: "Wisdom Divine / Product Engineer",
     description:
-      "Software engineer building systems that solve real operational problems.",
+      "Product Engineer building systems that solve real operational problems.",
     images: ["/logo.png"],
     creator: "@wisdomdivine",
   },
@@ -145,10 +145,10 @@ export default function RootLayout({
               "@type": "Person",
               name: "Wisdom Divine",
               url: "https://wisdomdivine.xyz",
-              jobTitle: "Software Engineer",
+              jobTitle: "Product Engineer",
               sameAs: [],
               knowsAbout: [
-                "Software Engineering",
+                "Product Engineering",
                 "Product Engineering",
                 "Web Development",
                 "Backend Systems",
