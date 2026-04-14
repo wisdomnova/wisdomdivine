@@ -32,6 +32,9 @@ export function Nav() {
         <a href="#contact" className="text-[11px] uppercase tracking-[0.15em] text-muted hover:text-foreground transition-colors duration-300">
           Contact
         </a>
+        <a href="/resume" className="text-[11px] uppercase tracking-[0.15em] text-muted hover:text-foreground transition-colors duration-300">
+          Resume
+        </a>
       </div>
     </nav>
   );

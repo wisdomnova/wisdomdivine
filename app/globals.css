@@ -60,3 +60,71 @@ hr {
 html {
   scroll-behavior: smooth;
 }
+
+/* ── Resume Page Styles ── */
+
+.resume-section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1a1a18;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1.5px solid #1a1a18;
+}
+
+/* ── Print Styles ── */
+
+@media print {
+  /* Reset everything for clean print */
+  @page {
+    size: A4;
+    margin: 14mm 16mm 14mm 16mm;
+  }
+
+  html, body {
+    background: white !important;
+    color: #1a1a18 !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide nav, toolbar, puzzle, footer */
+  nav, footer, .no-print {
+    display: none !important;
+  }
+
+  /* Resume page fills cleanly */
+  .resume-page {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .resume-section-title {
+    font-size: 9px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    border-bottom-width: 1px;
+  }
+
+  /* Prevent orphan breaks inside entries */
+  .project-entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Links: show as text, no underlines */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* Remove shadows, borders we don't need */
+  * {
+    box-shadow: none !important;
+  }
+}
