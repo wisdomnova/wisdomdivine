@@ -130,6 +130,24 @@ const projects: Project[] = [
     tech: ['Tailwind', 'Framer Motion', 'Markdown', 'Design Tokens'],
     year: '2026',
   },
+  {
+    ref: 'WD-14',
+    title: 'AGDIL',
+    category: 'Agribusiness Platform',
+    description:
+      'African agriculture and agribusiness ecosystem featuring courses, grants, and funding opportunities. Includes e-commerce catalog, CAC registration, credit worthiness assessment, and marketplace for agricultural products and services.',
+    tech: ['Next.js', 'React Hook Form', 'PostgreSQL', 'Markdown Content'],
+    year: '2024',
+  },
+  {
+    ref: 'WD-15',
+    title: 'TMF Nigeria',
+    category: 'Event Platform / Stakeholder Coordination',
+    description:
+      'The Mechanization Forum: platform for Nigeria\'s agricultural mechanization ecosystem. Features event management, staff check-in with QR codes, partner coordination, and gallery. Connects farmers, service providers, and stakeholders around mechanization access.',
+    tech: ['Next.js', 'Framer Motion', 'Tabler Icons', 'Real-time Check-in'],
+    year: '2026',
+  },
 ];
 
 export function Projects() {
