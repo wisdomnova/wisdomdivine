@@ -13,11 +13,13 @@ const contact = {
   linkedin: 'linkedin.com/in/wisdomnova',
 };
 
+const coreStack = 'Node.js | NestJS | Fastify | PostgreSQL | Redis | Docker | AWS | React | Next.js | TypeScript';
+
 const summary =
-  'Software engineer focused on backend systems, automation, and scalable SaaS infrastructure. Experienced designing transactional workflows, asynchronous processing pipelines, telemetry systems, and multi tenant architectures. Specialized in NestJS, Fastify, and Node.js with database and system design expertise.';
+  'Software engineer focused on backend systems, automation, and scalable SaaS infrastructure. Experienced designing transactional workflows, asynchronous processing pipelines, telemetry systems, and multi tenant architectures. Specialized in Node.js, NestJS, and Fastify with database and system design expertise.';
 
 const capabilities = [
-  { area: 'Backend Systems', skills: 'NestJS, Fastify, Node.js, PostgreSQL, SQLite, Redis, REST APIs, GraphQL, system design' },
+  { area: 'Backend Systems', skills: 'Node.js, NestJS, Fastify, PostgreSQL, Redis, GraphQL, REST APIs, SQLite, system design' },
   { area: 'Frontend Systems', skills: 'React, Next.js, TypeScript, Tailwind CSS, Framer Motion' },
   { area: 'Infrastructure & Tools', skills: 'Docker, AWS, Git, GitHub, Linux, CI/CD, IoT telemetry protocols' },
   { area: 'Security & Auth', skills: 'JWT authentication, OAuth, role based access control (RBAC)' },
@@ -39,7 +41,7 @@ const competencies = [
 ];
 
 const highlights = [
-  'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates',
+  'Designed PostgreSQL database schemas supporting marketplace transactions, escrow workflows, and real time state synchronization',
   'Built an email delivery platform using Redis backed job queues, contact segmentation, and SMTP rate limiting to support reliable high volume campaign execution',
   'Developed hardware device fleet management telemetry systems with offline SQLite synchronization protocols',
   'Integrated AI LLM inference pipelines to parse unstructured documents into typed database schemas',
@@ -54,7 +56,7 @@ const heroProjects = [
     period: '2024',
     type: 'Service Marketplace Infrastructure',
     description:
-      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
+      'Designed PostgreSQL database schemas supporting marketplace transactions, escrow workflows, and real time state synchronization. Built escrow workflows, RBAC authorization, and a double entry ledger for wallet accounting. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
   },
   {
@@ -90,7 +92,7 @@ const heroProjects = [
     period: '2024 - Present',
     type: 'Product Studio Architecture',
     description:
-      'Designed architectural foundations, database schemas, and shared authentication services powering multi tenant SaaS platforms.',
+      'Founded and lead a product studio building SaaS platforms across marketplaces, AI, and business automation. Designed shared authentication services, reusable backend architecture, and multi tenant database foundations.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Docker'],
   },
 ];
@@ -168,7 +170,7 @@ export function ResumeClient() {
         <div className="max-w-[850px] mx-auto px-8 py-12 print:px-0 print:py-0 mt-16 print:mt-0">
 
           {/* ── Header ── */}
-          <header className="mb-8 print:mb-6">
+          <header className="mb-6 print:mb-4">
             <h1 className="text-3xl print:text-[26px] font-bold tracking-tight leading-tight">
               {contact.name}
             </h1>
@@ -193,6 +195,12 @@ export function ResumeClient() {
               <a href={`https://${contact.linkedin}`} className="hover:text-neutral-900 print:text-neutral-600 transition-colors">
                 {contact.linkedin}
               </a>
+            </div>
+            
+            {/* Core Stack Block */}
+            <div className="mt-4 pt-3 border-t border-neutral-100 text-xs print:text-[10px] font-mono text-neutral-600 tracking-tight">
+              <span className="font-semibold text-neutral-900 mr-2">Core Stack:</span>
+              {coreStack}
             </div>
           </header>
 

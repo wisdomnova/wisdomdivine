@@ -17,7 +17,7 @@ const heroProjects: Project[] = [
     title: 'BeeSeek',
     category: 'Service Marketplace Infrastructure',
     description:
-      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
+      'Designed PostgreSQL database schemas supporting marketplace transactions, escrow workflows, and real time state synchronization. Built escrow workflows, RBAC authorization, and a double entry ledger for wallet accounting. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
     year: '2024',
   },
@@ -53,7 +53,7 @@ const heroProjects: Project[] = [
     title: 'Loin Tech Limited',
     category: 'Product Studio Architecture',
     description:
-      'Designed architectural foundations, database schemas, and shared authentication services powering multi tenant SaaS platforms.',
+      'Founded and lead a product studio building SaaS platforms across marketplaces, AI, and business automation. Designed shared authentication services, reusable backend architecture, and multi tenant database foundations.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Docker'],
     year: '2024',
   },
