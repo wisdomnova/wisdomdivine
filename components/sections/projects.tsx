@@ -17,7 +17,7 @@ const heroProjects: Project[] = [
     title: 'BeeSeek',
     category: 'Service Marketplace Infrastructure',
     description:
-      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances.',
+      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
     year: '2024',
   },

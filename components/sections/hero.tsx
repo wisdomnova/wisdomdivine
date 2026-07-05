@@ -17,7 +17,7 @@ export function Hero() {
         {/* Ref number */}
         <FadeUp delay={0.1}>
           <span className="text-[11px] font-mono tracking-[0.2em] text-dim uppercase block mb-8">
-            Established 2026, Abuja, Nigeria
+            Building software since 2022, Abuja, Nigeria
           </span>
         </FadeUp>
 

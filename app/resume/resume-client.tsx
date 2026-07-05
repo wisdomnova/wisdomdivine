@@ -14,12 +14,14 @@ const contact = {
 };
 
 const summary =
-  'Software engineer focused on backend systems, automation, and scalable SaaS infrastructure. Experienced designing transactional workflows, asynchronous processing pipelines, telemetry systems, and multi tenant architectures for products spanning marketplaces, enterprise tooling, and AI platforms.';
+  'Software engineer focused on backend systems, automation, and scalable SaaS infrastructure. Experienced designing transactional workflows, asynchronous processing pipelines, telemetry systems, and multi tenant architectures. Specialized in NestJS, Fastify, and Node.js with database and system design expertise.';
 
 const capabilities = [
-  { area: 'Backend Systems', skills: 'Node.js, NestJS, Fastify, PostgreSQL, SQLite, Redis, REST APIs, System Design' },
+  { area: 'Backend Systems', skills: 'NestJS, Fastify, Node.js, PostgreSQL, SQLite, Redis, REST APIs, GraphQL, system design' },
   { area: 'Frontend Systems', skills: 'React, Next.js, TypeScript, Tailwind CSS, Framer Motion' },
-  { area: 'Infrastructure', skills: 'Docker, AWS, Linux, IoT Fleet Management Protocols, CI/CD' },
+  { area: 'Infrastructure & Tools', skills: 'Docker, AWS, Git, GitHub, Linux, CI/CD, IoT telemetry protocols' },
+  { area: 'Security & Auth', skills: 'JWT authentication, OAuth, role based access control (RBAC)' },
+  { area: 'Testing Frameworks', skills: 'Jest, Vitest, Playwright, integration testing' },
   { area: 'AI Integration', skills: 'Structured LLM Outputs, Vector Search Pipelines, Prompt Optimization' },
 ];
 
@@ -48,11 +50,11 @@ const highlights = [
 const heroProjects = [
   {
     title: 'BeeSeek',
-    role: 'Backend Architect',
+    role: 'Lead Backend Engineer',
     period: '2024',
     type: 'Service Marketplace Infrastructure',
     description:
-      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances.',
+      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances. Architected backend services for contracts, wallets, notifications, messaging, and service lifecycle management.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
   },
   {

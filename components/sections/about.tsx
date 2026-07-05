@@ -50,18 +50,7 @@ export function About() {
 
             <FadeUp delay={0.25}>
               <p className="text-muted leading-[1.8] mb-6 max-w-lg">
-                I&apos;ve worked across multiple domains including marketplaces,
-                internal tools, SaaS platforms, and web3 infrastructure. My work
-                sits at the intersection of product engineering, automation, and
-                scalable backend systems.
-              </p>
-            </FadeUp>
-
-            <FadeUp delay={0.35}>
-              <p className="text-muted leading-[1.8] max-w-lg">
-                Currently focused on building and scaling products, while
-                leveraging automation, SaaS development, and AI-powered systems
-                to create tools that drive efficiency and generate real value.
+                I build software that removes operational friction. Most of my work involves designing backend systems, asynchronous job processing workflows, and scalable SaaS products that solve real business problems.
               </p>
             </FadeUp>
           </div>
