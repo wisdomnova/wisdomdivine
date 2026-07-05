@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const capabilities = [
   { label: 'Frontend', detail: 'React, Next.js, TypeScript, Tailwind CSS' },
-  { label: 'Backend', detail: 'Node.js, Python, PostgreSQL, Redis, MongoDB' },
+  { label: 'Backend', detail: 'Node.js, NestJS, Fastify, PostgreSQL, Redis, MongoDB' },
   { label: 'Infrastructure', detail: 'AWS, Docker, CI/CD, MDM Systems' },
   { label: 'Web3', detail: 'Solidity, Cross-chain tooling, On-chain systems' },
   { label: 'Product', detail: 'SaaS architecture, Automation, AI-powered tools' },

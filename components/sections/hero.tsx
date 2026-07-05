@@ -17,24 +17,23 @@ export function Hero() {
         {/* Ref number */}
         <FadeUp delay={0.1}>
           <span className="text-[11px] font-mono tracking-[0.2em] text-dim uppercase block mb-8">
-            Est. 2026, Abuja, Nigeria
+            Established 2026, Abuja, Nigeria
           </span>
         </FadeUp>
 
         {/* Main headline */}
         <FadeUp delay={0.2} duration={1}>
           <h1 className="font-serif text-[clamp(2.8rem,6vw,5.5rem)] font-normal leading-[1.05] tracking-tight mb-10">
-            Product engineer building
+            Product Engineer specializing
             <br className="hidden md:block" />
-            <em className="font-normal"> systems that work.</em>
+            <em className="font-normal"> in backend systems.</em>
           </h1>
         </FadeUp>
 
         {/* Subtitle */}
         <FadeUp delay={0.4}>
           <p className="max-w-lg text-muted leading-relaxed text-[clamp(0.9rem,1.1vw,1.05rem)]">
-            Product engineering, automation, and scalable backend systems. 
-            with a strong bias toward execution and real-world application.
+            Designing backend architectures, asynchronous job processing workflows, and database schemas with a strong focus on execution.
           </p>
         </FadeUp>
 

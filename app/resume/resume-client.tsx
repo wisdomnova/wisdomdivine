@@ -5,7 +5,7 @@ import { Printer, ArrowLeft } from 'lucide-react';
 /* ─── Data ─── */
 const contact = {
   name: 'Wisdom Divine',
-  title: 'Product Engineer',
+  title: 'Product Engineer (Backend Focus)',
   location: 'Abuja, Nigeria',
   email: 'hello@wisdomdivine.xyz',
   website: 'wisdomdivine.xyz',
@@ -14,88 +14,115 @@ const contact = {
 };
 
 const summary =
-  'Product engineer with a strong bias toward execution and real-world application. I identify inefficiencies, design systems around them, and ship solutions that actually get used. Experienced across marketplaces, SaaS platforms, enterprise tooling, and web3 infrastructure, with deep focus on automation, scalable backend systems, and product development.';
+  'Software engineer focused on backend systems, automation, and scalable SaaS infrastructure. Experienced designing transactional workflows, asynchronous processing pipelines, telemetry systems, and multi tenant architectures for products spanning marketplaces, enterprise tooling, and AI platforms.';
 
 const capabilities = [
-  { area: 'Frontend', skills: 'React, Next.js, TypeScript, Tailwind CSS, Framer Motion' },
-  { area: 'Backend', skills: 'Node.js, Python, PostgreSQL, Redis, MongoDB, REST APIs' },
-  { area: 'Infrastructure', skills: 'AWS, Docker, CI/CD, MDM Systems, Linux' },
-  { area: 'Web3', skills: 'Solidity, Cross-chain tooling, On-chain systems, Web3.js' },
-  { area: 'Product', skills: 'SaaS architecture, Automation, AI-powered tools, System design' },
+  { area: 'Backend Systems', skills: 'Node.js, NestJS, Fastify, PostgreSQL, SQLite, Redis, REST APIs, System Design' },
+  { area: 'Frontend Systems', skills: 'React, Next.js, TypeScript, Tailwind CSS, Framer Motion' },
+  { area: 'Infrastructure', skills: 'Docker, AWS, Linux, IoT Fleet Management Protocols, CI/CD' },
+  { area: 'AI Integration', skills: 'Structured LLM Outputs, Vector Search Pipelines, Prompt Optimization' },
 ];
 
-const projects = [
+const competencies = [
+  'API Design',
+  'Database Design',
+  'Authentication & Authorization',
+  'Workflow Automation',
+  'Background Job Processing',
+  'Real-time Systems',
+  'AI Integration',
+  'System Architecture',
+  'Performance Optimization',
+  'Technical Product Design',
+];
+
+const highlights = [
+  'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates',
+  'Built an email delivery platform using Redis backed job queues, contact segmentation, and SMTP rate limiting to support reliable high volume campaign execution',
+  'Developed hardware device fleet management telemetry systems with offline SQLite synchronization protocols',
+  'Integrated AI LLM inference pipelines to parse unstructured documents into typed database schemas',
+  'Engineered multi tenant authentication, sharing, and API key management layers for product studios',
+  'Optimized PostgreSQL queries, connection pools, and relational index distributions for search queries',
+];
+
+const heroProjects = [
   {
     title: 'BeeSeek',
-    role: 'Full-Stack Engineer',
+    role: 'Backend Architect',
     period: '2024',
-    type: 'Service Marketplace',
+    type: 'Service Marketplace Infrastructure',
     description:
-      'Designed and built a full lifecycle service marketplace handling discovery, contracting, execution, payments, and completion. Implemented real-time task state management, contract workflows, and wallet infrastructure.',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Real-time'],
-  },
-  {
-    title: 'Conneer',
-    role: 'Full-Stack Engineer',
-    period: '2025',
-    type: 'AI / Career Tools',
-    description:
-      'Built an AI-powered ATS score checker with job tracking and resume optimization. Helps candidates align resumes with job requirements and track applications in one place.',
-    tech: ['Next.js', 'AI/ML', 'Node.js', 'PostgreSQL'],
-  },
-  {
-    title: 'Ikore',
-    role: 'Full-Stack Engineer',
-    period: '2025',
-    type: 'Agric Infrastructure',
-    description:
-      'Developed an agricultural infrastructure platform streamlining operations across farming value chains. Built for scale, reliability, and the realities of agric in Africa.',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL'],
+      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances.',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
   },
   {
     title: 'LeadFlow',
-    role: 'Full-Stack Engineer',
+    role: 'Backend Engineer',
     period: '2024',
-    type: 'Email Automation',
+    type: 'Email Automation Pipeline',
     description:
-      'Engineered a campaign platform for managing outreach at scale with structured campaigns, automated flows, and bulk email operations optimized for deliverability.',
+      'Built a high throughput email marketing engine utilizing Redis message queues and Node.js workers. Designed contact segmentation algorithms and SMTP rate limiting to optimize deliverability.',
     tech: ['React', 'Node.js', 'Redis', 'SMTP'],
   },
   {
     title: 'MDM Agent / TracTrac',
     role: 'Systems Engineer',
     period: '2023',
-    type: 'Enterprise Tooling',
+    type: 'Enterprise Fleet Tooling',
     description:
-      'Built a fleet management system for farmland tablets. Monitoring, control, and visibility across distributed hardware in agricultural environments.',
-    tech: ['React', 'Python', 'MDM', 'IoT'],
+      'Developed a hardware fleet management server and agent monitoring distributed agricultural tablets. Implemented remote configuration payloads, telemetry aggregation, and offline SQLite data synchronization.',
+    tech: ['React', 'Python', 'SQLite', 'MDM Protocol'],
   },
   {
-    title: 'Versertile',
-    role: 'Full-Stack / Web3 Engineer',
-    period: '2024',
-    type: 'Web3 / Creative Tool',
+    title: 'Conneer',
+    role: 'Full Stack Engineer',
+    period: '2025',
+    type: 'AI Pipeline Integration',
     description:
-      'Created the P.O.E.M engine, a creative on-chain tool exploring the intersection of poetry, blockchain, and digital expression.',
-    tech: ['Next.js', 'Solidity', 'Web3.js'],
-  },
-  {
-    title: 'Multipu',
-    role: 'Web3 Engineer',
-    period: '2024',
-    type: 'Web3 / DeFi',
-    description:
-      'Hackathon project enabling users to launch meme coins across multiple markets simultaneously with multi-chain deployment.',
-    tech: ['Next.js', 'Solidity', 'Cross-chain'],
+      'Integrated LLM inference engines to parse documents and generate structured JSON outputs. Designed candidate ranking algorithms matching resume profiles against extracted corporate job schemas.',
+    tech: ['Next.js', 'AI APIs', 'Node.js', 'PostgreSQL'],
   },
   {
     title: 'Loin Tech Limited',
     role: 'Founder / Lead Engineer',
     period: '2024 - Present',
-    type: 'Product Studio',
+    type: 'Product Studio Architecture',
     description:
-      'Founded and run a product studio that builds and ships products including SignSea, LowFi, and BeeSeek. Focused on scalable tools solving real operational problems.',
-    tech: ['Next.js', 'Node.js', 'Multi-product'],
+      'Designed architectural foundations, database schemas, and shared authentication services powering multi tenant SaaS platforms.',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Docker'],
+  },
+];
+
+const selectedProjects = [
+  {
+    title: 'LowFi',
+    type: 'Business Operating System',
+    description: 'Consolidated distributed enterprise workflows into a centralized relational database and API layer for SMEs.',
+  },
+  {
+    title: 'AGDIL',
+    type: 'Agribusiness Platform',
+    description: 'Developed automated credit worthiness assessments and agribusiness marketplace endpoints.',
+  },
+  {
+    title: 'Landvigo',
+    type: 'Property Discovery',
+    description: 'Designed geospatial indexing pipelines and map based query performance systems.',
+  },
+  {
+    title: 'TMF Nigeria',
+    type: 'Event Coordination',
+    description: 'Implemented event check in systems utilizing real time QR verification and local database state synchronization.',
+  },
+  {
+    title: 'Ikore',
+    type: 'Agric Infrastructure',
+    description: 'Engineered backend distribution logic and tracking systems for agricultural value chains.',
+  },
+  {
+    title: 'UI Intelligence Dataset',
+    type: 'Design Systems & Machine Learning',
+    description: 'Compiled design tokens, interactive components, and structural patterns for model training environments.',
   },
 ];
 
@@ -177,13 +204,25 @@ export function ResumeClient() {
             </p>
           </section>
 
+          {/* ── Engineering Highlights ── */}
+          <section className="mb-7 print:mb-5">
+            <h2 className="resume-section-title">Engineering Highlights</h2>
+            <ul className="list-disc list-inside space-y-1 text-sm print:text-[11px] text-neutral-600">
+              {highlights.map((highlight, idx) => (
+                <li key={idx} className="leading-relaxed">
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          </section>
+
           {/* ── Technical Skills ── */}
           <section className="mb-7 print:mb-5">
             <h2 className="resume-section-title">Technical Skills</h2>
-            <div className="space-y-1.5">
+            <div className="space-y-1.5 mb-4">
               {capabilities.map((cap) => (
                 <div key={cap.area} className="flex text-sm print:text-[11px]">
-                  <span className="font-semibold text-neutral-900 w-28 print:w-24 shrink-0">
+                  <span className="font-semibold text-neutral-900 w-36 print:w-32 shrink-0">
                     {cap.area}
                   </span>
                   <span className="text-neutral-600">{cap.skills}</span>
@@ -192,11 +231,26 @@ export function ResumeClient() {
             </div>
           </section>
 
-          {/* ── Projects / Experience ── */}
+          {/* ── Selected Engineering Competencies ── */}
           <section className="mb-7 print:mb-5">
-            <h2 className="resume-section-title">Projects & Experience</h2>
+            <h2 className="resume-section-title">Selected Engineering Competencies</h2>
+            <div className="flex flex-wrap gap-2">
+              {competencies.map((comp) => (
+                <span
+                  key={comp}
+                  className="text-[10px] print:text-[9.5px] font-mono px-2.5 py-1 bg-neutral-100 text-neutral-600 rounded print:bg-neutral-50 print:border print:border-neutral-200"
+                >
+                  {comp}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          {/* ── Hero Projects ── */}
+          <section className="mb-7 print:mb-5">
+            <h2 className="resume-section-title">Featured Projects & Experience</h2>
             <div className="space-y-5 print:space-y-3">
-              {projects.map((project) => (
+              {heroProjects.map((project) => (
                 <div key={project.title} className="project-entry">
                   <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
                     <div className="flex items-baseline gap-2">
@@ -234,6 +288,28 @@ export function ResumeClient() {
             </div>
           </section>
 
+          {/* ── Selected Projects ── */}
+          <section className="mb-7 print:mb-5">
+            <h2 className="resume-section-title">Selected Projects</h2>
+            <div className="space-y-2.5 print:space-y-1.5">
+              {selectedProjects.map((project) => (
+                <div key={project.title} className="flex flex-col md:flex-row md:items-baseline justify-between text-sm print:text-[11px] gap-1">
+                  <div className="flex items-baseline gap-2 shrink-0">
+                    <h3 className="font-semibold text-neutral-900">
+                      {project.title}
+                    </h3>
+                    <span className="text-xs print:text-[10px] text-neutral-400">
+                      {project.type}
+                    </span>
+                  </div>
+                  <p className="text-neutral-600 md:text-right text-xs print:text-[10px]">
+                    {project.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* ── Education ── */}
           <section className="mb-7 print:mb-5">
             <h2 className="resume-section-title">Education</h2>
@@ -254,7 +330,7 @@ export function ResumeClient() {
             ))}
           </section>
 
-          {/* ── Footer note (screen only, subtle) ── */}
+          {/* ── Footer note (screen only) ── */}
           <div className="no-print mt-12 pt-6 border-t border-neutral-100 text-center">
             <p className="text-xs text-neutral-400">
               Press <kbd className="px-1.5 py-0.5 bg-neutral-100 rounded text-neutral-500 text-[10px] font-mono">⌘P</kbd> or click the button above to save as PDF

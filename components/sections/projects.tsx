@@ -1,7 +1,6 @@
 'use client';
 
 import { FadeUp, Stagger, StaggerItem } from '@/components/motion';
-import { ArrowUpRight } from 'lucide-react';
 
 interface Project {
   ref: string;
@@ -12,141 +11,134 @@ interface Project {
   year: string;
 }
 
-const projects: Project[] = [
+const heroProjects: Project[] = [
   {
     ref: 'WD-01',
     title: 'BeeSeek',
-    category: 'Service Marketplace',
+    category: 'Service Marketplace Infrastructure',
     description:
-      'Full lifecycle service marketplace: discovery, contracting, execution, payments, and completion. Real-time task states, contracts, and wallet infrastructure.',
-    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Real-time'],
+      'Designed normalized PostgreSQL schemas supporting complex marketplace relationships, transactional integrity, and real time state updates. Developed multi party escrow state machines, role based permissions, and double entry ledger bookkeeping system for wallet balances.',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'WebSockets'],
     year: '2024',
   },
   {
     ref: 'WD-02',
     title: 'LeadFlow',
-    category: 'Email Automation',
+    category: 'Email Automation Pipeline',
     description:
-      'Campaign platform for managing outreach at scale. Structured campaigns, automated flows, and bulk email operations designed for performance.',
+      'Built a high throughput email marketing engine utilizing Redis message queues and Node.js workers. Designed contact segmentation algorithms and SMTP rate limiting to optimize deliverability.',
     tech: ['React', 'Node.js', 'Redis', 'SMTP'],
     year: '2024',
   },
   {
     ref: 'WD-03',
-    title: 'MDM Agent, TracTrac',
-    category: 'Enterprise Tooling',
+    title: 'MDM Agent / TracTrac',
+    category: 'Enterprise Fleet Tooling',
     description:
-      'Fleet management system for farmland tablets. Monitoring, control, and visibility across distributed hardware in agricultural environments.',
-    tech: ['React', 'Python', 'MDM', 'IoT'],
+      'Developed a hardware fleet management server and agent monitoring distributed agricultural tablets. Implemented remote configuration payloads, telemetry aggregation, and offline SQLite data synchronization.',
+    tech: ['React', 'Python', 'SQLite', 'MDM Protocol'],
     year: '2023',
   },
   {
     ref: 'WD-04',
-    title: 'Landvigo',
-    category: 'Real Estate Platform',
+    title: 'Conneer',
+    category: 'AI Pipeline Integration',
     description:
-      'Property listing platform focused on distress sales and map-based exploration. Simplified discovery for buyers and agents.',
-    tech: ['Next.js', 'Maps API', 'PostgreSQL'],
-    year: '2023',
+      'Integrated LLM inference engines to parse documents and generate structured JSON outputs. Designed candidate ranking algorithms matching resume profiles against extracted corporate job schemas.',
+    tech: ['Next.js', 'AI APIs', 'Node.js', 'PostgreSQL'],
+    year: '2025',
   },
   {
     ref: 'WD-05',
-    title: 'LowFi',
-    category: 'Business Management',
+    title: 'Loin Tech Limited',
+    category: 'Product Studio Architecture',
     description:
-      'All-in-one operations tool for SMEs. Consolidates workflows, reduces fragmentation, and gives small businesses operational control.',
+      'Designed architectural foundations, database schemas, and shared authentication services powering multi tenant SaaS platforms.',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Docker'],
+    year: '2024',
+  },
+];
+
+const selectedProjects: Project[] = [
+  {
+    ref: 'WD-06',
+    title: 'LowFi',
+    category: 'Business Operating System',
+    description: 'Consolidated distributed enterprise workflows into a centralized relational database and API layer for SMEs.',
     tech: ['React', 'Node.js', 'MongoDB'],
     year: '2023',
   },
   {
-    ref: 'WD-06',
-    title: 'Versertile',
-    category: 'Web3 / Creative Tool',
-    description:
-      'P.O.E.M engine: a creative on-chain tool exploring the intersection of poetry, blockchain, and digital expression.',
-    tech: ['Next.js', 'Solidity', 'Web3.js'],
-    year: '2024',
-  },
-  {
     ref: 'WD-07',
-    title: 'Multipu',
-    category: 'Web3 / DeFi',
-    description:
-      'Hackathon project enabling users to launch meme coins across multiple markets simultaneously. Multi-chain deployment.',
-    tech: ['Next.js', 'Solidity', 'Cross-chain'],
+    title: 'AGDIL',
+    category: 'Agribusiness Platform',
+    description: 'Developed automated credit worthiness assessments and agribusiness marketplace endpoints.',
+    tech: ['Next.js', 'PostgreSQL', 'REST API'],
     year: '2024',
   },
   {
     ref: 'WD-08',
-    title: 'SPE UI, University of Ibadan',
-    category: 'Organizational',
-    description:
-      'Official website for the Society of Petroleum Engineers student chapter. Professional interface for a large student body.',
-    tech: ['Next.js', 'CMS', 'Tailwind'],
-    year: '2022',
+    title: 'Landvigo',
+    category: 'Property Discovery',
+    description: 'Designed geospatial indexing pipelines and map based query performance systems.',
+    tech: ['Next.js', 'Maps API', 'PostgreSQL'],
+    year: '2023',
   },
   {
     ref: 'WD-09',
-    title: 'Conneer',
-    category: 'AI / Career Tools',
-    description:
-      'AI-powered ATS score checker, job tracking, and resume optimizer. Helps candidates align their resumes with job requirements and track applications in one place.',
-    tech: ['Next.js', 'AI/ML', 'Node.js', 'PostgreSQL'],
-    year: '2025',
+    title: 'TMF Nigeria',
+    category: 'Event Coordination',
+    description: 'Implemented event check in systems utilizing real time QR verification and local database state synchronization.',
+    tech: ['Next.js', 'Framer Motion', 'Real-time Sync'],
+    year: '2026',
   },
   {
     ref: 'WD-10',
-    title: 'My Hero VA',
-    category: 'Virtual Assistant',
-    description:
-      'A virtual assistant platform connecting businesses with skilled remote assistants. Clean, professional interface built for trust and conversion.',
-    tech: ['Next.js', 'Tailwind', 'CMS'],
-    year: '2025',
-  },
-  {
-    ref: 'WD-11',
-    title: 'Loin Tech Limited',
-    category: 'Company / Product Studio',
-    description:
-      'My company that builds and ships products like SignSea, LowFi, and BeeSeek. Focused on creating scalable tools that solve real operational problems.',
-    tech: ['Next.js', 'Node.js', 'Multi-product'],
-    year: '2024',
-  },
-  {
-    ref: 'WD-12',
     title: 'Ikore',
     category: 'Agric Infrastructure',
-    description:
-      'Agricultural infrastructure platform streamlining operations across farming value chains. Built for scale, reliability, and the realities of agric in Africa.',
+    description: 'Engineered backend distribution logic and tracking systems for agricultural value chains.',
     tech: ['Next.js', 'Node.js', 'PostgreSQL'],
     year: '2025',
   },
   {
+    ref: 'WD-11',
+    title: 'Multipu',
+    category: 'DeFi Deployer',
+    description: 'Created smart contracts and frontends enabling programmatic token deployment across multiple EVM networks.',
+    tech: ['Next.js', 'Solidity', 'EVM Chains'],
+    year: '2024',
+  },
+  {
+    ref: 'WD-12',
+    title: 'Versertile',
+    category: 'Creative Engine',
+    description: 'Built an on chain publishing engine mapping structured text metadata to blockchain storage layers.',
+    tech: ['Next.js', 'Solidity', 'Web3.js'],
+    year: '2024',
+  },
+  {
     ref: 'WD-13',
-    title: 'Claude UI',
-    category: 'Design System / AI Tooling',
-    description:
-      'A comprehensive AI UI design training set extracted from 11 award-winning websites. Foundations, patterns, archetypes, and code snippets that teach AI agents to produce professional-grade interfaces.',
-    tech: ['Tailwind', 'Framer Motion', 'Markdown', 'Design Tokens'],
+    title: 'UI Intelligence Dataset',
+    category: 'Design Systems & Machine Learning',
+    description: 'Compiled design tokens, interactive components, and structural patterns for model training environments.',
+    tech: ['Tailwind', 'Framer Motion', 'JSON'],
     year: '2026',
   },
   {
     ref: 'WD-14',
-    title: 'AGDIL',
-    category: 'Agribusiness Platform',
-    description:
-      'African agriculture and agribusiness ecosystem featuring courses, grants, and funding opportunities. Includes e-commerce catalog, CAC registration, credit worthiness assessment, and marketplace for agricultural products and services.',
-    tech: ['Next.js', 'React Hook Form', 'PostgreSQL', 'Markdown Content'],
-    year: '2024',
+    title: 'My Hero VA',
+    category: 'Assistant Platform',
+    description: 'Designed registration pipelines and booking schedules for remote support services.',
+    tech: ['Next.js', 'Tailwind CSS', 'CMS'],
+    year: '2025',
   },
   {
     ref: 'WD-15',
-    title: 'TMF Nigeria',
-    category: 'Event Platform / Stakeholder Coordination',
-    description:
-      'The Mechanization Forum: platform for Nigeria\'s agricultural mechanization ecosystem. Features event management, staff check-in with QR codes, partner coordination, and gallery. Connects farmers, service providers, and stakeholders around mechanization access.',
-    tech: ['Next.js', 'Framer Motion', 'Tabler Icons', 'Real-time Check-in'],
-    year: '2026',
+    title: 'SPE UI',
+    category: 'Organizational Site',
+    description: 'Built structural templates, membership directories, and event landing pages for petroleum engineers.',
+    tech: ['Next.js', 'CMS', 'Tailwind CSS'],
+    year: '2022',
   },
 ];
 
@@ -154,31 +146,28 @@ export function Projects() {
   return (
     <section id="index" className="py-24 md:py-40 px-6 md:px-12 lg:px-20">
       <div className="max-w-5xl">
-        {/* Section header */}
+        {/* Hero Projects Section */}
         <FadeUp>
           <div className="flex items-baseline justify-between mb-16">
             <h2 className="font-serif text-[clamp(1.8rem,3.5vw,3rem)] tracking-tight">
-              Work Index
+              Featured Systems & Architectures
             </h2>
             <span className="text-[11px] font-mono text-dim tracking-[0.15em]">
-              {String(projects.length).padStart(2, '0')} Projects
+              {String(heroProjects.length).padStart(2, '0')} Hero Projects
             </span>
           </div>
         </FadeUp>
 
-        {/* Project list — editorial index style */}
         <Stagger delay={0.1} stagger={0.05}>
-          <ul className="divide-y divide-border border-t border-border">
-            {projects.map((project) => (
+          <ul className="divide-y divide-border border-t border-border mb-28">
+            {heroProjects.map((project) => (
               <StaggerItem key={project.ref}>
-                <li className="group cursor-pointer">
-                  <div className="py-8 md:py-10 flex flex-col md:grid md:grid-cols-[80px_1fr_1fr_60px] md:items-start gap-4 md:gap-6 transition-opacity duration-300">
-                    {/* Ref # */}
+                <li className="group">
+                  <div className="py-8 md:py-10 flex flex-col md:grid md:grid-cols-[80px_1.2fr_1.8fr_80px] md:items-start gap-4 md:gap-6 transition-opacity duration-300">
                     <span className="text-[11px] font-mono text-dim tracking-[0.15em] pt-1">
                       {project.ref}
                     </span>
 
-                    {/* Title + Category */}
                     <div>
                       <h3 className="font-serif text-xl md:text-2xl tracking-tight group-hover:text-muted transition-colors duration-300">
                         {project.title}
@@ -188,13 +177,59 @@ export function Projects() {
                       </span>
                     </div>
 
-                    {/* Description */}
-                    <p className="text-sm text-muted leading-relaxed max-w-sm">
+                    <p className="text-sm text-muted leading-relaxed">
                       {project.description}
                     </p>
 
-                    {/* Year */}
-                    <span className="text-[11px] font-mono text-dim self-start pt-1">
+                    <div className="flex flex-col gap-1 text-[11px] font-mono text-dim self-start pt-1 md:text-right w-full">
+                      <span>{project.year}</span>
+                      <span className="text-[10px] text-neutral-500 overflow-hidden text-ellipsis whitespace-nowrap block">
+                        {project.tech.slice(0, 2).join(', ')}
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </StaggerItem>
+            ))}
+          </ul>
+        </Stagger>
+
+        {/* Selected Projects Section */}
+        <FadeUp>
+          <div className="flex items-baseline justify-between mb-16 pt-12 border-t border-border">
+            <h2 className="font-serif text-[clamp(1.5rem,2.8vw,2.4rem)] tracking-tight">
+              Selected Software Projects
+            </h2>
+            <span className="text-[11px] font-mono text-dim tracking-[0.15em]">
+              {String(selectedProjects.length).padStart(2, '0')} Index Items
+            </span>
+          </div>
+        </FadeUp>
+
+        <Stagger delay={0.1} stagger={0.05}>
+          <ul className="divide-y divide-border border-t border-border">
+            {selectedProjects.map((project) => (
+              <StaggerItem key={project.ref}>
+                <li className="group">
+                  <div className="py-6 flex flex-col md:grid md:grid-cols-[80px_1fr_2fr_80px] md:items-center gap-2 md:gap-6 transition-opacity duration-300">
+                    <span className="text-[11px] font-mono text-dim tracking-[0.15em]">
+                      {project.ref}
+                    </span>
+
+                    <div>
+                      <h4 className="font-serif text-lg tracking-tight group-hover:text-muted transition-colors duration-300">
+                        {project.title}
+                      </h4>
+                      <span className="text-[9px] font-mono uppercase tracking-[0.1em] text-dim mt-0.5 block">
+                        {project.category}
+                      </span>
+                    </div>
+
+                    <p className="text-xs text-muted leading-relaxed">
+                      {project.description}
+                    </p>
+
+                    <span className="text-[11px] font-mono text-dim md:text-right">
                       {project.year}
                     </span>
                   </div>
